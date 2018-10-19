@@ -133,7 +133,7 @@ class PluginEvent implements PluginInterface, EventSubscriberInterface
         $vendorDir = $event->getComposer()->getConfig()->get("vendor-dir");
         $libraryDir = dirname($vendorDir)."/"."library";
         if (!is_dir($libraryDir)) {
-            @mkdir($libraryDir, 0755);
+            @mkdir($libraryDir, 0755, true);
         }
         if ($this->_updatePackages) {
             foreach ($this->_updatePackages as $packageName => $autoloadInfo) {
@@ -147,7 +147,7 @@ class PluginEvent implements PluginInterface, EventSubscriberInterface
                     }
                     $yafPackageDir = $libraryDir."/".$namespace;
                     $cmd = sprintf(
-                        "rm -rf %s && mkdir %s && cp -r %s/* %s",
+                        "rm -rf %s && mkdir -p %s && cp -r %s/* %s",
                         $yafPackageDir, $yafPackageDir, $packageDir,
                         $yafPackageDir
                     );
