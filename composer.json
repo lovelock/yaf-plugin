@@ -2,6 +2,9 @@
     "name": "lovelock/yaf-plugin",
     "description": "exchange for yaf loader and composer packages",
 	"type":"composer-plugin",
+    "extra":{
+        "class":"lovelock\\yafplugin\\PluginEvent"
+    },
     "authors": [
         {
             "name": "Frost Wong",
