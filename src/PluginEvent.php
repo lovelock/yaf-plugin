@@ -1,6 +1,6 @@
 <?php
 
-namespace yuyang\yafplugin;
+namespace lovelock\yafplugin;
 
 use Composer\Script\Event;
 
@@ -26,7 +26,7 @@ class PluginEvent implements PluginInterface, EventSubscriberInterface
     protected $_uninstallPackages = [];
     protected $_ignorePackages = [];
 
-    const SELF_PLUGIN_NAME = "yuyang/yaf-plugin";
+    const SELF_PLUGIN_NAME = "lovelock/yaf-plugin";
 
     public function activate(Composer $composer, IOInterface $io)
     {

@@ -1,19 +1,16 @@
 {
-    "name": "yuyang/yaf-plugin",
+    "name": "lovelock/yaf-plugin",
     "description": "composer yaf plugin",
 	"type":"composer-plugin",
-	"extra":{
-		"class":"yuyang\\yafplugin\\PluginEvent"
-	},
     "authors": [
         {
-            "name": "yuyang",
-            "email": "jmuljy@163.com"
+            "name": "Frost Wong",
+            "email": "frostwong@gmail.com"
         }
     ],
 	"autoload":{
 		"psr-4":{
-			"yuyang\\yafplugin\\": "src"
+			"lovelock\\yafplugin\\": "src"
 		}
 	},
     "require": {
