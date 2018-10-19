@@ -1,6 +1,6 @@
 {
     "name": "lovelock/yaf-plugin",
-    "description": "composer yaf plugin",
+    "description": "exchange for yaf loader and composer packages",
 	"type":"composer-plugin",
     "authors": [
         {
